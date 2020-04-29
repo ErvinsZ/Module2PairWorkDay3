@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+        @media screen and (max-width: 552px) {
+  .dealOfDay {
+      display: none;
+  }
+}
+
+.lastMinute img{
+    height: 300px;
+}
+
+.carousel img{
+    height: 300px;
+    width: 400px;
+}
+
+body{
+    text-align: center;
+    
+}
+h2, button {
+    padding: 10px 0;
+}
+
+            
+        
+    </style>
+  </head>
+  
+  <body>
+      <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/46/e3/a7/46e3a70305921f3fab625d8001c0e52e.png" width="100" height="100" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#summerNav">Welcome Summer<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#dealOfTheWeekNav">Deal of the Week</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dealOfDayNav">Deal of the Day</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#lastMinuteNav">Last minute Deals</a>
+              </li>           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      </header>
+      <main>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Travel Guru</h1>
+              <p class="lead">Travel the World in a exclusive private Jet.</p>
+            </div>
+          </div>
+          <h2 id="dealOfTheWeekNav">Deal of the Week</h2>
+          <button onclick="collapse()" class="btn bg-primary">Hide / Show</button>
+         <div class="container" id="dealWeek" >
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">Europe</div>
+                <div class="col">North America</div>
+                <div class="col">Asia</div>
+                <div class="col">Africa</div>
+            </div>
+         </div>
+         <br>
+         <h2 id="summerNav">Welcome Summer Destinations</h2>
+         <button onclick="collapseOne()" class="btn bg-primary">Hide / Show</button>
+         <div class="container shadow-lg" id="summer">
+             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6" id="hotDeal">
+                <div class="col">Bahamas</div>
+                <div class="col">Bermuda</div>
+                <div class="col">Bali</div>
+                <div class="col">Caribbean</div>
+                <div class="col">Maui</div>
+                <div class="col">Ibiza</div>
+             </div>
+         </div>
+         
+         <h2 id="dealOfDayNav" class="dealOfDay pt-5">Deal of the Day</h2>
+         <button onclick="collapseTwo()" class="btn bg-primary">Hide / Show</button>
+         <div class="card mb-3 dealOfDay" id="dealDay" >
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61c8vCHBSsL._AC_SY679_.jpg" class="card-img" style="max-height:400px"  alt="...">
+              </div>
+              <div class="col-md-2">
+                <div class="card-body">
+                  <h5 class="card-title">70% off for Tours to Maui!!! </h5>
+                  <p class="card-text">Enjoy the paradise beaches of the stunning Maui starting from 100EUR per person</p>
+                  <p class="card-text"><small class="text-muted">*Deal expires by middnight</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 id="lastMinuteNav">Last minute Deals</h2>
+          <button onclick="collapseThree()" class="btn bg-primary">Hide / Show</button>
+          <div class="lastMinute" id="lastMinute">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="https://image.cnbcfm.com/api/v1/image/106294131-1576211589402gettyimages-913987230.jpeg?v=1576211867&w=1400&h=950" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maui</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="https://i2.milimaj.com/i/milliyet/75/0x410/5c8d563845d2a04bdc3a7ec9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ibiza</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/147/147871201.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bermuda</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fd3056d1a-2219-11ea-92da-f0c92e957a96?fit=scale-down&source=next&width=700" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bahamas</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                      <img src="https://s25468.pcdn.co/wp-content/uploads/2018/11/sunset-from-secret-cove-Maui-Hawaii-copy.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Caribbean</h5>
+                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ibiza</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+          </div>
+
+          <h2>Testimonials</h2>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3 dealOfDay" >
+                    <div class="row no-gutters">
+                      <div class="col-md-8">
+                        <img src="https://i.pinimg.com/736x/0b/b1/5f/0bb15fd89591ca05d13d4095227f65f1.jpg" class="card-img"  alt="...">
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <h5 class="card-title">Homer </h5>
+                          <p class="card-text">Best travel experience ever. Recommend to all my friends</p>
+                          <p class="card-text"><small class="text-muted">24th April, 2019</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3 dealOfDay" >
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <img src="https://i.pinimg.com/originals/75/a7/80/75a7801776d1e4d548f1bd5a46654eee.jpg" class="card-img"  alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Moe </h5>
+                  <p class="card-text">Worst customer service ever. Never got my money back</p>
+                  <p class="card-text"><small class="text-muted">4th January, 2020</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3 dealOfDay" >
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <img src="https://i.pinimg.com/originals/b1/9b/c2/b19bc29fb72e2f4b9f11d8daa5290a86.jpg" class="card-img"  alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Krusty the clown</h5>
+                  <p class="card-text">Was not allowed to smoke on the plane, but besides that pretty decent experience</p>
+                  <p class="card-text"><small class="text-muted">3rd March, 2018</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          
+
+          
+          
+      </main>
+      <footer>
+        <div class="card text-center">
+            <div class="card-header">
+                Travel Guru Inc.
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">White House, Washington D.C.</h5>
+              <p class="card-text">777 666 55 44</p>
+              
+
+              
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Contact us</button>
+              
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <div class="card-footer text-muted">
+              Travel Guru 2020
+            </div>
+          </div>
+      </footer>
+      <script>
+        function collapse() {
+          var x = document.getElementById("dealWeek");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function collapseOne() {
+          var x = document.getElementById("summer");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }function collapseTwo() {
+          var x = document.getElementById("dealDay");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }function collapseThree() {
+          var x = document.getElementById("lastMinute");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+
+        // function addHot(){
+        //     let x = document.createElement("img");
+        //     x.src = "https://img3.stockfresh.com/files/r/robuart/m/95/9743939_stock-vector-hot-sale-heraldic-badge-promo-offer-50-percent-off.jpg"
+        //     let i = document.getElementsByClassName("col");
+        //     for (let index = 0; index < i.length; index++) {
+        //         const element = i[index];
+        //         element.appendChild(x)
+        //     }
+            
+        // }
+        // window.onload = function (){
+        //     addHot()
+        // }
+
+       
+        </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
